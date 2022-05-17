@@ -18,6 +18,7 @@ html{
     background-color: rgba(128, 128, 128, 0.914);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.661);
     border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .cabecalho{
     float: left;
@@ -70,6 +71,9 @@ input[type=number]{
 .formulario{
     margin-top: 50px;
     
+}
+.agencia,.conta,.button, .acessarH1{
+    padding: 5px;
 }
 
 /*AJUSUTES DOS CABEÇALHO*/
