@@ -15,7 +15,7 @@ html{
     margin: auto;
     height: 700px;
     width: 80%;
-    background-color: rgba(128, 128, 128, 0.914);
+    background-color: rgba(128, 128, 128, 0.974);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.661);
     border-radius: 6px;
     font-family: Arial, Helvetica, sans-serif;
@@ -111,7 +111,8 @@ input:focus + label{
     color: black;
 }
 
-/*SETINGS DO BUTTON*/
+/*SETINGS DO BUTTON FOMULÁRIO*/
+
 .button{
     display: flex;
     justify-content: center;
@@ -122,4 +123,29 @@ input:focus + label{
     border-color: black;
     font-weight: bold;
     font-size: 12pt;
+}
+
+/*SETINGS DO CADASTRE-SE*/
+
+hr{
+    width: 50%;
+    border-color: black;
+}
+.cadastroLink, .nomeCentral{
+    display: flex;
+    justify-content: center;
+}
+.nomeCentral{
+    margin-top: 45px;
+    font-size: 10pt;
+}
+a{
+    text-decoration: none;
+    font-size: 20pt;
+    margin-top: 20px;
+    color: rgba(0, 0, 0, 0.517);
+}
+a:hover{
+    color: black;
+    transition: all .5s ease-out;
 }
