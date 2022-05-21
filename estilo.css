@@ -50,11 +50,11 @@ html{
 
 /*SETINGS DOS INPUTS*/ 
 
-/*tira setinhas do tipo number*/
+/*tira setinhas do tipo number  (tirado, pois o tipo number foi descartado do projeto.)
 input[type=number]::-webkit-inner-spin-button { 
     -webkit-appearance: none;
-}
-input[type=number]{
+}*/
+input{
     background: none;
     width: 100%;
     padding: 2px;
@@ -68,7 +68,7 @@ input[type=number]{
 
 /* AJUSTES DO FOMULÁRIO*/
 
-.agencia,.conta,.button, .acessarH1{
+.label-float, .button, .acessarH1{
     padding: 5px;
 }
 .acessarH1{
@@ -90,7 +90,7 @@ input[type=number]{
 
 /*ANIMAÇAO DOS INPUTS*/
 
-.agencia, .conta{
+.label-float{
     position: relative;
     padding: 0;
     padding-top: 13px;
@@ -106,9 +106,16 @@ label{
     margin-top: 13px;
     transition: all .3s ease-out;
 }
-input:focus + label{
+.label-float input:focus + label{
     margin-top: 0;
     color: black;
+    transition: .3s ease-in-out;
+}
+/* correção do bug dos inputs (label ficava por cima do conteúdo)*/
+.label-float input:valid + label{
+    margin-top: 0;
+    color: black;
+    transition: .3s ease-in-out;
 }
 
 /*SETINGS DO BUTTON FOMULÁRIO*/
@@ -117,12 +124,20 @@ input:focus + label{
     display: flex;
     justify-content: center;
 }
-.botao{
+button{
     background: none;
     padding: 5px;
+    border: 2px 2px 2px 2px solid ;
     border-color: black;
     font-weight: bold;
     font-size: 12pt;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background-color: rgb(22, 18, 18);
+    color: gray;
 }
 
 /*SETINGS DO CADASTRE-SE*/
