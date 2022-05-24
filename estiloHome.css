@@ -50,10 +50,6 @@ html{
 
 /*SETINGS DOS INPUTS*/ 
 
-/*tira setinhas do tipo number  (tirado, pois o tipo number foi descartado do projeto.)
-input[type=number]::-webkit-inner-spin-button { 
-    -webkit-appearance: none;
-}*/
 input{
     background: none;
     width: 100%;
