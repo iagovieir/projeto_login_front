@@ -16,9 +16,9 @@ body{
 .container{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    width: 60%;
-    height: 80%;
-    background-color: aqua;
+    width: 50%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.541);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -27,11 +27,8 @@ body{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.661);
 
 }
-/*.container > div > input{
-    align-items: center;
-}*/
 .container > div{
-    width: 50%;
+    width: 70%;
 }
 input{
     width: 100%;
@@ -40,12 +37,35 @@ input{
     border-bottom: 2px solid black;
     outline: none;
     margin-bottom: 30px;
+    font-size: 16px;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.535);
 }
 .container > h1{
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 } 
 .container > .formulario{
     display: flex;
     flex-direction: column;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background: none;
+    padding: 5px;
+    border: 2px 2px 2px 2px solid ;
+    border-color: black;
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+button:hover{
+    background-color: rgb(22, 18, 18);
+    color: rgba(255, 255, 255, 0.541);
 }
