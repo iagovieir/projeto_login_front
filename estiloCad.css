@@ -50,6 +50,9 @@ input::placeholder{
     display: flex;
     flex-direction: column;
 }
+b{
+    color: crimson;
+}
 .botao{
     display: flex;
     justify-content: center;
